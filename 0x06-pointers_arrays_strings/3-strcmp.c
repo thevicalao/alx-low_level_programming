@@ -1,23 +1,4 @@
-#include "holberton.h"
-
-/**
- * _strcmp - Compares pointers to two strings.
- * @s1: A pointer to the first string to be compared.
- * @s2: A pointer to the second string to be compared.
- *
- * Return: If str1 < str2, the negative difference of
- * the first unmatched characters.
- *         If s1 == s2, 0.
- *         If s1 > s2, the positive difference of
- *         the first unmatched characters.
- */
-int _strcmp(char *s1, char *s2)
-{
-	while ((*s1 && *s2) && (*s1 == *s2))
-	{
-		s1++;
-		s2++;
-	}
-
-	return (*s1 - *s2);
-}
+[master 4305c44] Write a function that compares two strings.
+ 2 files changed, 27 insertions(+), 26 deletions(-)
+ rewrite 0x06-pointers_arrays_strings/2-strncpy.c (100%)
+ create mode 100644 0x06-pointers_arrays_strings/3-strcmp.c
