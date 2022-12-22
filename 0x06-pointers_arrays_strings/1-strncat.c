@@ -1,21 +1,11 @@
-#include "holberton.h"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
 
-/**
- * _strncat - Concatenates two strings using at most
- *            an inputted number of bytes from src.
- *    * @dest: The string to be appended upon.
- * @src: The string to be appended to dest.
- * @n: The number of bytes from src to be appended to dest.
- *
- * Return: A pointer to the resulting string dest.
- */
-char *_strncat(char *dest, char *src, int n)
-{
-	int index = 0, dest_len = 0;
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    ../0-putchar.c
+	modified:   1-strncat.c
 
-	while (dest[index++])
-		dest_len++;
-	for (index = 0; src[index] && index < n; index++)
-		dest[dest_len++] = src[index];
-	return (dest);
-}
+no changes added to commit (use "git add" and/or "git commit -a")
