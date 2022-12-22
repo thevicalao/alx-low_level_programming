@@ -1,19 +1,4 @@
-#include "holberton.h"
-
-/**
- * reverse_array - Reverses the content of an array of integers.
- * @a: The array of integers to be reversed.
- * @n: The number of elements in the array.
- */
-
-void reverse_array(int *a, int n)
-{
-	int tmp, index;
-
-	for (index = n - 1; index >= n / 2; index--)
-	{
-		tmp = a[n - 1 - index];
-		a[n - 1 - index] = a[index];
-		a[index] = tmp;
-	}
-}
+[master 1db3d63] Write a function that reverses the content of an array of integers.
+ 2 files changed, 23 insertions(+), 23 deletions(-)
+ rewrite 0x06-pointers_arrays_strings/3-strcmp.c (100%)
+ create mode 100644 0x06-pointers_arrays_strings/4-rev_array.c
