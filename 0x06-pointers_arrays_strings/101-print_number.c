@@ -1,21 +1,4 @@
-#include "main.h"
-/**
- * print_number - prints an integer
- *@n:integer to be printed
- *
- */
-void print_number(int n)
-{
-	unsigned int num = n;
-
-	if (n < 0)
-	{
-		_putchar('-');
-		num = -num;
-	}
-
-	if ((num / 10) > 0)
-		print_number(num / 10);
-
-	_putchar((num % 10) + '0');
-}
+[master 755c16a] Write a function that prints an integer.
+ 2 files changed, 25 insertions(+), 46 deletions(-)
+ rewrite 0x06-pointers_arrays_strings/100-rot13.c (100%)
+ create mode 100644 0x06-pointers_arrays_strings/101-print_number.c
